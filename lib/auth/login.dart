@@ -70,6 +70,16 @@ class _LoginPageState extends State<LoginPage> {
                         letterSpacing: -0.5,
                       ),
                     ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Sign in to your account to continue',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: MainLayout.textSubtitleColor,
+                      ),
+                    ),
+                    const SizedBox(height: 40),
                   ],
                 )
               ),
