@@ -34,7 +34,31 @@ class _LoginPageState extends State<LoginPage> {
               child: Form(
                 key: _formKey,
                 child: Column(
-                  
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Image.asset(
+                      'assets/images/shop.gif',
+                      height: 200,
+                      fit: BoxFit.contain,
+                      errorBuilder: (context, error, stackTrace) {
+                        return Container(
+                          height: 200,
+                          decoration: BoxDecoration(
+                            color: MainLayout.primaryColor.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: const Center(
+                            child: Icon(
+                              Icons.image_not_supported_outlined,
+                              size: 80,
+                              color: MainLayout.primaryColor,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ],
                 )
               ),
             ),
