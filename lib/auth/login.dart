@@ -26,7 +26,20 @@ class _LoginPageState extends State<LoginPage> {
       title: 'Login',
       showAppBar: false,
       child: Container(
-        
+        color: MainLayout.backgroundColor,
+        child: Center(
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsetsGeometry.symmetric(horizontal: 32.0, vertical: 24.0),
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  
+                )
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
