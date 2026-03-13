@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MainLayout extends StatelessWidget {
-  const MainLayout({super.key});
-
+  
   static const Color primaryColor = Color(0xFF4D51ED);
   static const Color backgroundColor = Color(0xFFFFFFFF);
   static const Color accentYellow = Color(0xFFFFC107);
@@ -18,6 +17,14 @@ class MainLayout extends StatelessWidget {
   final String title;
   final bool showAppBar;
   final List<Widget>? actions;
+
+  const MainLayout({
+    super.key,
+    required this.child,
+    this.title = '',
+    this.showAppBar = true,
+    this.actions,
+  });
 
   @override
   Widget build(BuildContext context) {
