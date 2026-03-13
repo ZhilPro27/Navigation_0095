@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Image.asset(
-                      'assets/images/shop.gif',
+                      'lib/assets/images/shop.gif',
                       height: 200,
                       fit: BoxFit.contain,
                       errorBuilder: (context, error, stackTrace) {

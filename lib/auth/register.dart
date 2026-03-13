@@ -42,7 +42,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Image.asset(
-                      'assets/images/register.gif', 
+                      'lib/assets/images/register.gif', 
                       height: 180,
                       fit: BoxFit.contain,
                       errorBuilder: (context, error, stackTrace) {
